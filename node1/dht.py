@@ -50,14 +50,18 @@ class Node:
     def update_successor(self, new_successor_id,new_successor_ip,new_successor_port):
         self.successor = Node(new_successor_id,new_successor_ip,new_successor_port)
 
-    def find_successor(self, id):
-        if self.successor is None:
-            # Si no hay sucesor, este nodo es el único
-            return self
-        elif self.id < id <= self.successor.id:
-            return self.successor
-        else:
-            return self.successor.find_successor(id)
+    def leave_network(self):
+        requests.post(f"http://{self.predecessor.ip}:{self.predecessor.port}/update_successor/{self.successor.id}/{self.successor.ip}/{self.successor.port}")
+        requests.post(f"http://{self.successor.ip}:{self.successor.port}/update_predecessor/{self.predecessor.id}/{self.predecessor.ip}/{self.predecessor.port}")
+
+    # def find_successor(self, id):
+    #     if self.successor is None:
+    #         # Si no hay sucesor, este nodo es el único
+    #         return self
+    #     elif self.id < id <= self.successor.id:
+    #         return self.successor
+    #     else:
+    #         return self.successor.find_successor(id)
 
     def print_node_info(self):
         pred_id = self.predecessor.id if self.predecessor else None

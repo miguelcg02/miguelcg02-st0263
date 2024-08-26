@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 import json
 from dht import create_node
 
@@ -30,6 +30,11 @@ def post_update_successor(new_successor_id,new_successor_ip,new_successor_port):
 @app.route('/find_predecessor_bootstrap', methods=['GET'])
 def get_find_predecessor_bootstrap():
     return jsonify({"id": node.predecessor.id,"ip":node.predecessor.ip, "port": node.predecessor.port})
+
+@app.route('/leave', methods=['GET'])
+def post_leave():
+    node.leave_network()
+    return jsonify({"message": "Left the network",})
 
 def main():
     global node
