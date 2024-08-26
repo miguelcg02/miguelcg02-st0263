@@ -1,0 +1,7 @@
+{
+    "ip": "127.0.0.1",
+    "port": 5000,
+    "files": ["file1.txt", "file2.txt"],
+    "bootstrap_ip": "127.0.0.1",
+    "bootstrap_port": 5000
+}
