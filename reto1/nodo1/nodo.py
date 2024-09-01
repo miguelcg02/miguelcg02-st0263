@@ -18,6 +18,7 @@ config = load_config()
 
 IP = config["ip"]
 PORT = int(config["port"])
+IP_FLASK = config["ip_flask"]
 PORT_FLASK = config["port_flask"]
 DIRECTORY = config["directory"]
 buffer = 4096
@@ -54,7 +55,7 @@ class Node:
             print("Socket not opened")
 
     def runFlask(self):
-        self.app.run(host=IP, port=PORT_FLASK)
+        self.app.run(host=IP_FLASK, port=PORT_FLASK)
 
     def listenThread(self):
         # Storing the IP and port in address and saving the connection and threading
