@@ -426,8 +426,7 @@ class Node:
                 return
         except FileNotFoundError:
             pass
-        # receiving file size
-        #fileSize = pickle.loads(connection.recv(buffer))
+        
         #print("File Size", fileSize)
         if not fileAlready:
             totalData = b''
@@ -443,6 +442,7 @@ class Node:
                             break
                         totalData += fileData
                     file.write(totalData)
+                    self.filenameList.append(filename)
             except ConnectionResetError:
                 print("Data transfer interupted\nWaiting for system to stabilize")
                 print("Trying again in 10 seconds")

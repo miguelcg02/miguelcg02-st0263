@@ -443,6 +443,7 @@ class Node:
                             break
                         totalData += fileData
                     file.write(totalData)
+                    self.filenameList.append(filename)
             except ConnectionResetError:
                 print("Data transfer interupted\nWaiting for system to stabilize")
                 print("Trying again in 10 seconds")
