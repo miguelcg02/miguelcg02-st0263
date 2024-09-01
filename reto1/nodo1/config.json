@@ -1,6 +1,6 @@
 {
     "ip": "127.0.0.1",
-    "port": "12345",
-    "port_flask": "12346",
+    "port": "12341",
+    "port_flask": "12351",
     "directory": "nodo1"
 }

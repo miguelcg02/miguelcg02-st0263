@@ -1,0 +1,6 @@
+{
+    "ip": "127.0.0.1",
+    "port": "12348",
+    "port_flask": "12358",
+    "directory": "nodo8"
+}
