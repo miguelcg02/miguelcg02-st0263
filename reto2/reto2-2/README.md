@@ -10,7 +10,7 @@
 - Simon Botero
   
 <br>**Título:** Aplicación Monolítica con Balanceo y Datos Distribuidos (BD y archivos)
-<br>**Objetivo:** Implementar un CMS empleando la tecnología de contenedores, con su propio dominio y certificado SSL. <br>**Sustentación:** 
+<br>**Objetivo:** Implementar un CMS empleando la tecnología de contenedores, con su propio dominio y certificado SSL. <br>**Sustentación:** https://youtu.be/LFkUwVRNqf0
 
 ## 1. Descripción de la actividad
 #### 1.1. Aspectos cumplidos:
