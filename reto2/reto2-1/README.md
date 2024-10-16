@@ -16,7 +16,7 @@ https://youtu.be/b-RwPSz6Chw
 ## 1. Descripción de la actividad
 #### 1.1. Aspectos cumplidos:
 
-- Crear nuestro propio dominio (miguapamundi.tech) con su configuración TXT.
+- Crear nuestro propio dominio (miguapa.tech) con su configuración TXT.
 - Wordpress dckerizado.
 - Certificado SSL con Let's Encrypt.
 - Balanceador de cargas con Ngnix y Docker.

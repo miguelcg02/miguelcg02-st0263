@@ -20,7 +20,7 @@
 - CLoud SQL con gcp para Mysql
 - Un servidor NFS para los archivos de gcp
 - Balanceador de cargas con Kubernetes
-- Dominio propio (reto2-2.miguapamundi.tech)
+- Dominio propio (reto2-2.miguapa.tech)
 
 #### 1.2. Aspectos no desarrollados:
 
