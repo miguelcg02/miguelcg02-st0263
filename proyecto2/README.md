@@ -8,7 +8,7 @@
 - Miguel Angel Martinez Garcia
 - Salomon Velez Perez
 - Simon Botero
-  
+
 <br>**Título:** Proyecto 2 - Cluster kubernetes
 <br>**Objetivo:** El objetivo es desplegar una aplicación en un clúster Kubernetes de alta disponibilidad utilizando la distribución MicroK8s en una infraestructura como servicio (IaaS) proporcionada por AWS.
 

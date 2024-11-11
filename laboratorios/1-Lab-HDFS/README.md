@@ -1,4 +1,4 @@
-# Proyecto 1
+# Lab 1
 
 **Curso:** ST0263 - Tópicos Especiales en Telemática
 <br>**Profesor:** Edwin Montoya - emontoya@eafit.edu.co
@@ -9,28 +9,36 @@
 
 ## Evidencias
 
-Se puede acceder al hue de hadoop en la siguiente dirección: http://ec2-44-211-36-120.compute-1.amazonaws.com:8888/
+1. crear un EMR en AWS con hue
+
+2. acceder al hue de hadoop entregado en el EMR: http://ec2-44-211-36-120.compute-1.amazonaws.com:8888/
 
 ![1](1.png)
 
-Luego por consola desde nodo master se crea el directorio de datsets
+3. Ingresa a la consola del nodo master EC2
+
+4. Luego por consola desde nodo master se crea el directorio de datsets
 
 ![2](2.png)
 
-se crea el directorio para gutenberg-small, se copia el archivo y se verifica que se haya copiado correctamente
+5. crear el directorio para gutenberg-small
+6. copiar el archivo que se va a subir
+7. verifica que se haya copiado correctamente
 
 ![3](3.png)
 
-se revisa desde el hue de hadoop que se haya copiado correctamente
+8. Ir al hue de hadoop y verificar que se haya copiado correctamente
 
 ![4](4.png)
 ![5](5.png)
 ![6](6.png)
 
-Luego probamos desde la web la creación de directorios y archivos
+9. Luego probamos desde la web la creación de directorios y archivos
 
 ![7](7.png)
 ![8](8.png)
 ![9](9.png)
 ![10](10.png)
 ![11](11.png)
+
+El entorno de hue ya está listo para trabajar con HDFS
